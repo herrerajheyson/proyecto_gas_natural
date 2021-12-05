@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-body{
+      font-size: 12px;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    background-image: url("https://img.freepik.com/vector-gratis/nota-papel-sobre-fondo-memphis_53876-99285.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
 }

@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+/*import Modulos from './components/webpages/Modulos';*/
+import Footer from './components/webpages/Footer';
+import Menu from './components/webpages/Menu';
+import Header from './components/webpages/Header';
+import ListadoUsu from './components/usuarios/ListadoUsu';
+import Modulos from './components/webpages/Modulos'
+
+
+
 
 function App() {
+
+  const lista_datos = [
+    { identificacion:'12.345.678', nombre_usu:'Usuario AAA',rol:'Administrador' },
+    { identificacion:'12.345.678', nombre_usu:'Usuario BBB',rol:'Usuario Interno' },
+    { identificacion:'12.345.678', nombre_usu:'Usuario CCC',rol:'Usuario Externo' }
+
+  ];
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+    <Header/>
+    <Menu/>
+    <ListadoUsu usuarios={lista_datos}/>
+    <Modulos/>
+    <Footer/>
+    
     </div>
-  );
+
+
+
+
+  )
 }
 
 export default App;
