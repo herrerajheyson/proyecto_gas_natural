@@ -11,11 +11,11 @@ function Menu(){
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
 
-                <li className="nav-item dropdown active">
+                <li className="nav-item dropdown">
                     <a className="nav-link" href="../webpages/acercade.html"><span>Acerca de</span></a>
                 </li>
 
-                <li className="nav-item dropdown active">
+                <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle negrita" href="none" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Mi cuenta
@@ -26,28 +26,20 @@ function Menu(){
                     </div>
                     
                 </li>
-                <li className="nav-item dropdown active">
-                    <a className="nav-link dropdown-toggle negrita" href="none" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Facturación
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a className="dropdown-item" href="../index.html">Consulta de Facturas</a>
-                        <a className="dropdown-item" href="../usuarios/add_usuarios.html">Configuración de tarifas</a>
-                    </div>
-                    
+
+                <li className="nav-item dropdown">
+                    <a className="nav-link" href="/facturacion">Facturación</a>                    
                 </li>
 
-
-                <li className="nav-item dropdown active">
-                    <a className="nav-link" href="../usuarios/listado_usu.html">Administración de Usuarios</a>                    
+                <li className="nav-item dropdown">
+                    <a className="nav-link" href="/usuarios">Administración de Usuarios</a>                    
                 </li>
 
-                <li className="nav-item dropdown active">
+                <li className="nav-item dropdown">
                     <a className="nav-link" href="../predios/listado_pred.html">Predios</a>                    
                 </li>
 
-                <li className="nav-item dropdown active">
+                <li className="nav-item dropdown">
                     <a className="nav-link" href="../mediciones/listado_med.html">Mediciones</a>                    
                 </li>
 
